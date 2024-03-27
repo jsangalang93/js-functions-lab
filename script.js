@@ -118,15 +118,35 @@ Define a function called longestStringInArray. It should accept an array of stri
 Complete Exercise 7 in the space below:
 */
 
-const longestStringInArray = (l, m, n, o) => {
-  if (l.length > m.length && l.length > n.length && l.length > o.length) {
-  return l
-  }else if (m.length > l.length && m.length > n.length && m.length > o.length) {
-  return m
-  }else if (n.length > l.length && n.length > m.length && n.length > o.length) {
-  return n
-  }else {
-  return o}
+function longestStringInArray(arr) {
+  let maxlength = 0
+  for(let i = 0; i <arr.length; i++) {
+    if (arr[i].length > maxlength){
+      maxlength = arr[i].length;
+    
+    }
+  }
+  return maxlength;
 }
 
-console.log('Exercise 7 Result:', longestStringInArray(1, 5, 4, 3));
+console.log('Exercise 7 Result:',longestStringInArray(["hellow", "hai", "wassup"]));
+
+/*
+Exercise 8: stringsLongerThan
+
+Write a function called stringsLongerThan. It takes an array of strings and a number, returning all strings longer than the given number. For example, stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3) would return ['hello', 'morning'].
+
+Complete Exercise 8 in the space below:
+*/
+
+function stringsLongerThan(arr, length) {
+  const result = [];  //the brackets are where the strings will go, null initalizing array
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].length > length) {
+      result.push(arr[i]);
+    }
+  } 
+return result;
+
+}
+console.log('Exercise 8 Result:', stringsLongerThan(["hello", "hi"], 3));
