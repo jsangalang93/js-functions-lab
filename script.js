@@ -131,7 +131,7 @@ function longestStringInArray(arr) {
 
 console.log('Exercise 7 Result:',longestStringInArray(["hellow", "hai", "wassup"]));
 
-/*
+/*git 
 Exercise 8: stringsLongerThan
 
 Write a function called stringsLongerThan. It takes an array of strings and a number, returning all strings longer than the given number. For example, stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3) would return ['hello', 'morning'].
